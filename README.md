@@ -1,5 +1,17 @@
 # flutter_siri_suggestions
 
+Forked from [myriky/flutter_siri_suggestions](https://github.com/myriky/flutter_siri_suggestions)
+
+Added namespace in `android/build.gradle`
+```yaml
+...
+android {
+  ...
+  namespace "software.handmade.flutter.flutter_siri_suggestions"
+}
+..
+```
+
 Flutter plugin for exposure on Siri Suggestions.
 
 <img src="https://img.shields.io/pub/v/flutter_siri_suggestions.svg" />

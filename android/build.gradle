@@ -11,7 +11,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.11.1'
+        classpath 'com.android.tools.build:gradle:7.4.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -27,7 +27,9 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    namespace "software.handmade.flutter.flutter_siri_suggestions"
+    if (project.android.hasProperty("namespace")) {
+        namespace("software.handmade.flutter.flutter_siri_suggestions")
+    }
 
     compileSdk 35
 
